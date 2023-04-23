@@ -13,11 +13,12 @@ const images = [
   },
 ];
 
-
 const ulImagesEl = document.querySelector(".gallery")
+
 let content = images.map(({ url, alt }) => {
   return`<li><img src=${url} alt=${alt} width = 320 height = 280/></li>`
 }).join('')
+
 ulImagesEl.insertAdjacentHTML('beforeend', content)
 
 
